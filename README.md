@@ -8,12 +8,11 @@ The goal is to demonstrate production-grade proficiency in component architectur
 
  Feature           Tool/Library                            
  -------------------------------------------
- Framework         Next.js (App Router)                    
+ Framework         Next.js                 
  Data Fetching     React Query                             
- State Management  Zustand (favorites)                     
+ State Management  Zustand (for favorite games)                     
  Styling           SCSS Modules                            
- Infinite Scroll   useInfiniteQuery + IntersectionObserver 
- Deployment        Vercel                                  
+ Infinite Scroll   useInfiniteQuery + IntersectionObserver           
 
 ## Key Features 
 
