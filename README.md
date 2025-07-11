@@ -1,10 +1,10 @@
-## Project Overview
+#  Project Overview
 
 This is a responsive, modern Casino Game Lobby built using Next.js. It allows users to explore, search, and filter casino games with infinite scrolling, favorites functionality, and persistent storage using localStorage.
 
 The goal is to demonstrate production-grade proficiency in component architecture, state management, performance optimization, and styling.
 
-## Tech Stack
+#  Tech Stack
 
  Feature           Tool/Library                            
  -------------------------------------------
@@ -14,55 +14,55 @@ The goal is to demonstrate production-grade proficiency in component architectur
  Styling           SCSS Modules                            
  Infinite Scroll   useInfiniteQuery + IntersectionObserver           
 
-## Key Features 
+#  Key Features 
 
-# Static Game Cards 
+## Static Game Cards 
     The UI loads with section wise game cards.
     In case of no query, no filters or zero search results, these static cards are shown for better user experience.
 
-# Search & Filter 
+## Search & Filter 
     As the user types in the input field , game cards fetched from search API and game cards are displayed on the screen. 
     Filters allow category-based filtering of games using games API. 
     Only one filter can be applied at a time.
 
-# Infinite Scroll & Games Fetching
+## Infinite Scroll & Games Fetching
     A custom InfiniteScroll component listens via IntersectionObserver and triggers fetching of the next page.
     Games are fetched using useInfiniteQuery from React Query
     Pagination implemented using offset + limit
     getNextPageParam calculates continuation based on total count.
 
-# Favorites Functionality
+## Favorites Functionality
     Users can add games to  "Favorites" or remove games from "Favorites" directly from game cards
     Favorite games are stored in Zustand and synced with localStorage
     Selecting the "Favorites" filter displays only the favorited games
 
-# Loading, Empty Error States
+## Loading, Empty Error States
     Shimmers are shown are improved percieved performance during api fetching.
     Empty and error states are handled with appropriate messages.
     Errors during fetch are gracefully handled by React Query.
 
-# Styling
+## Styling
     All components are styled using SCSS Modules for scoped, maintainable styles
     Custom loader and shimmer effects implemented for a premium casino feel
     Card hover includes subtle motion for better interactivity
     Responsive design ensures proper layout on mobile and desktop
 
-# Persistence
+## Persistence
     Favorite games are saved in localStorage
     On app load, Zustand initializes state from storage for continuity. 
 
 
 
 
-## Implementation Decisions
+#  Implementation Decisions
 
-#  Modular Component Architecture
+##  Modular Component Architecture
 
     Why?
     Promotes reusability and separation of concerns
     Makes testing and styling easier
 
-# API Fetching via Custom Hooks
+## API Fetching via Custom Hooks
 
     Why?
     To encapsulate searching, pagination and filtering logic in a reusable, testable unit
@@ -74,7 +74,7 @@ The goal is to demonstrate production-grade proficiency in component architectur
     All API calls for paginated game data are abstracted into a custom hook useGames.
     useInfiniteQuery handles limit, offset, abort signal, and getNextPageParam
 
-#  Infinite Scroll with Intersection Observer
+##  Infinite Scroll with Intersection Observer
 
     Why?
     Seamless user experience — new content loads as users scroll
@@ -85,7 +85,7 @@ The goal is to demonstrate production-grade proficiency in component architectur
     InfiniteScroll.jsx uses a ref + IntersectionObserver
     Calls fetchNextPage() from React Query when sentinel div is visible
 
-# Zustand for State Management 
+## Zustand for State Management 
 
     Why?
     Lightweight, minimal boilerplate
@@ -96,7 +96,7 @@ The goal is to demonstrate production-grade proficiency in component architectur
     useFavouriteStore hook abstracts the logic for favouriting feature and provides access to favourites across
     the application 
 
-# Zustand  Middleware for Persistent Storage
+## Zustand  Middleware for Persistent Storage
 
     Why?
     Required to persist favorite games across sessions using localStorage
@@ -106,7 +106,7 @@ The goal is to demonstrate production-grade proficiency in component architectur
     On load, Zustand rehydrates state from localStorage
     Users can close and return later with their favorites intact
 
-# Shimmer Loader + Premium Loader Animation
+## Shimmer Loader + Premium Loader Animation
     
     Why?
     Enhance perceived performance during content load
@@ -117,7 +117,7 @@ The goal is to demonstrate production-grade proficiency in component architectur
     Placeholder shimmer shown until images load
     Shimmer + custom CSS loader for infinite scroll 
 
-# AbortController for Better Performance
+## AbortController for Better Performance
 
     Why?
     Prevents unnecessary or outdated network requests.
@@ -130,5 +130,7 @@ The goal is to demonstrate production-grade proficiency in component architectur
     Ensured only the latest request gets processed by aborting any previous requests.
 
 
-## How to run
-    Use: npm run dev
+##  How to run
+    Run the following commands:
+    npm install
+    npm run dev
