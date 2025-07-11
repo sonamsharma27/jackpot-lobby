@@ -9,6 +9,16 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="icon"
+          type="image/x-icon"
+          href="https://cdn.jackpot.bet/images/small-logo.png"
+        />
+        <title>Jackpot Lobby</title>
+      </head>
       <body>
         <QueryClientProvider client={queryClient}>
           {children}

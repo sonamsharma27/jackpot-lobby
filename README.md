@@ -129,3 +129,7 @@ The goal is to demonstrate production-grade proficiency in component architectur
     Used AbortController inside custom API hooks.
     Passed controller.signal to fetch or Axios config.
     Ensured only the latest request gets processed by aborting any previous requests.
+
+
+## How to run
+    Use: npm run dev
