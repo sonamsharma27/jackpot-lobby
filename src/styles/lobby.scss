@@ -95,7 +95,6 @@
         border-radius: 8px;
         cursor: pointer;
         border: none;
-        transition: background 0.3s;
         padding: .3rem;
 
         img {
@@ -107,11 +106,7 @@
 
 }
 
-.favourite-games {
-    padding: 1rem;
-}
-
-
+.favourite-games,
 p {
     padding: 1rem;
 }
