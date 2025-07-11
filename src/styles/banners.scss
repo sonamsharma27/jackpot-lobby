@@ -1,0 +1,25 @@
+.banner-section {
+    display: flex;
+    overflow-x: scroll;
+
+
+    .banner-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 1rem;
+        border-radius: 0.5rem;
+        border: 2px solid transparent;
+        transition: border-color 0.3s ease;
+
+        &:hover {
+            border-color: gold;
+        }
+
+        .banner-image {
+            width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+        }
+    }
+}

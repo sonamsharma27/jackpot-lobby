@@ -1,0 +1,33 @@
+.loader-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    border-top: 4px solid #FFD700; // rich gold
+    border-right: 4px solid #FFC107; // gold-orange
+    animation: spin 1s linear infinite;
+    box-shadow: 0 0 10px #FFD700, 0 0 20px #FFC107;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        box-shadow: 0 0 6px #FFD700;
+    }
+
+    50% {
+        box-shadow: 0 0 14px #FFF3CD;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        box-shadow: 0 0 6px #FFD700;
+    }
+}
