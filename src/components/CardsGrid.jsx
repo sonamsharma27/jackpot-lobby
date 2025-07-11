@@ -9,7 +9,7 @@ const CardsGrid = ({ games, isFetchingNextPage }) => {
         <GameCard key={game.slug} game={game} />
       ))}
       {isFetchingNextPage &&
-        Array.from({ length: 8 }).map((_, i) => (
+        Array.from({ length: 15 }).map((_, i) => (
           <CardShimmer key={`shimmer-${i}`} />
         ))}
     </div>
