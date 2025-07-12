@@ -27,8 +27,8 @@ const useGames = (filter) => {
       return json?.data?.data || [];
     },
     getNextPageParam: (lastPage, allPages) => {
-      const total = lastPage.total;
-      const fetched = allPages.reduce((sum, page) => sum + page.count, 0);
+      const total = lastPage.data.total;
+      const fetched = allPages.reduce((sum, page) => sum + page.data.count, 0);
       return fetched < total ? allPages.length + 1 : undefined;
     },
   });
