@@ -27,12 +27,6 @@ const Lobby = () => {
     isFetching,
   } = useSearch(debouncedQuery);
 
-  if (isSearchError) {
-    return (
-      <h1 className="error">Error loading games. Please try again later.</h1>
-    );
-  }
-
   const handleFilterSelect = (filterName) => {
     setFilter((prev) => (prev === filterName ? "" : filterName));
     setSearchInput(""); // Reset search input when filter is applied
@@ -53,6 +47,12 @@ const Lobby = () => {
     const showStaticGameCards =
       ((!searchInput && !filter) || !gameCards || gameCards?.length === 0) &&
       !isFetching;
+
+    if (isSearchError) {
+      return (
+        <h1 className="error">Error loading games. Please try again later.</h1>
+      );
+    }
 
     if (showFavorites) return <FavouriteGames />;
     if (filter) {
@@ -80,7 +80,6 @@ const Lobby = () => {
       {renderGameContent()}
     </div>
   );
-
 };
 
 export default Lobby;
