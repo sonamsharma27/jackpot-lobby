@@ -4,6 +4,7 @@ const config = {
   PROXY_SEARCH_URL: "https://jackpot-proxy.onrender.com/search",
   PROXY_GAMES_URL: "https://jackpot-proxy.onrender.com/games",
   PROXY_URL: "https://jackpot-proxy.onrender.com/search",
+  LOGO_URL: "https://cdn.jackpot.bet/images/small-logo.png",
   FILTERS: [
     { displayName: "Table Games", value: "tableGames" },
     { displayName: "Live Dealer", value: "liveDealer" },
