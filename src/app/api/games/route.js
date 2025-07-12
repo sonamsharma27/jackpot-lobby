@@ -8,13 +8,12 @@ export async function GET(req) {
     const offset = searchParams.get("offset") || 0;
     const category = searchParams.get("category") || "";
 
-    const response = await axios.get(config.GAMES_BASE_URL, {
+    const response = await axios.get(config.PROXY_GAMES_URL, {
       params: {
         limit,
         offset,
         category,
       },
-      timeout: 10000,
       headers: {
         Accept: "application/json",
       },

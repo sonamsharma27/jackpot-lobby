@@ -24,7 +24,7 @@ const useGames = (filter) => {
       if (!res.ok) throw new Error("Failed to fetch games");
 
       const json = await res.json();
-      return json?.data || [];
+      return json?.data?.data || [];
     },
     getNextPageParam: (lastPage, allPages) => {
       const total = lastPage.total;

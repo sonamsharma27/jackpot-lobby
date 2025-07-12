@@ -1,7 +1,9 @@
 const config = {
   SEARCH_BASE_URL: "https://jpapi-staging.jackpot.bet/casino/games/search",
   GAMES_BASE_URL: "https://jpapi-staging.jackpot.bet/casino/games",
-  LOGO_URL: "https://cdn.jackpot.bet/images/small-logo.png",
+  PROXY_SEARCH_URL: "https://jackpot-proxy.onrender.com/search",
+  PROXY_GAMES_URL: "https://jackpot-proxy.onrender.com/games",
+  PROXY_URL: "https://jackpot-proxy.onrender.com/search",
   FILTERS: [
     { displayName: "Table Games", value: "tableGames" },
     { displayName: "Live Dealer", value: "liveDealer" },

@@ -13,11 +13,10 @@ export async function GET(req) {
       );
     }
 
-    const url = config.SEARCH_BASE_URL;
+    const url = config.PROXY_SEARCH_URL;
 
     const response = await axios.get(url, {
       params: { query },
-      timeout: 10000,
       headers: {
         Accept: "application/json",
       },
