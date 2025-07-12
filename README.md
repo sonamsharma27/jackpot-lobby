@@ -8,11 +8,13 @@ The goal is to demonstrate production-grade proficiency in component architectur
 
  Feature           Tool/Library                            
  -------------------------------------------
- Framework         Next.js                 
- Data Fetching     React Query                             
- State Management  Zustand (for favorite games)                     
- Styling           SCSS Modules                            
- Infinite Scroll   useInfiniteQuery + IntersectionObserver           
+ Framework        :  Next.js                 
+ Data Fetching    :  React Query                             
+ State Management :  Zustand (for favorite games)                     
+ Styling          :  SCSS Modules                            
+ Infinite Scroll  :  useInfiniteQuery + IntersectionObserver   
+ Deployment       :  Vercel + Render
+
 
 #  Key Features 
 
@@ -129,6 +131,10 @@ The goal is to demonstrate production-grade proficiency in component architectur
     Passed controller.signal to fetch or Axios config.
     Ensured only the latest request gets processed by aborting any previous requests.
 
+
+## Deployment 
+    Used Vercel for hosting the application.
+    Deployed a proxy server on render to bypass CORS issue for APIs
 
 ##  How to run
     Run the following commands:
