@@ -140,3 +140,8 @@ The goal is to demonstrate production-grade proficiency in component architectur
     Run the following commands:
     npm install
     npm run dev
+
+# Host Url: 
+    https://jackpot-lobby1-git-main-sonam-sharmas-projects-89ab5433.vercel.app/
+
+    The server for the application is deployed on a free service. It gets shut down after 15 minutes of inactivity.So you might face initial load time upto 1-2 minutes during searching/ filtering if the server is shut down . 
